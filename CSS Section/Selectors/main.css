@@ -1,0 +1,28 @@
+p {
+    color: red;
+}
+
+.pClass {
+    color: teal;
+}
+
+.pseudoClass:hover {
+    color: green;
+}
+
+img[alt="yes"] {
+    width: 20%;
+}
+
+img[alt="no"] {
+    width: 40%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Helvetica", "Arial", sans-serif;
+}

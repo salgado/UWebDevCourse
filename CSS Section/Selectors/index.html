@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 </head>
+
 <body>
-    
+
+    <!-- Classes -->
+
+    <p>This is the paragraph I wan to target</p>
+
+    <p class="pClass">This is a paragraph with a class</p>
+
+    <p class="pseudoClass">This paragraph changes color when hover over it</p>
+
+    <!-- Attributes Selectors -->
+
+    <!-- Attribute selectors are a special kind of selector that will match elements based on their attributes and attribute values.
+        Their generic syntax consists of square brackets ([]) containing an attribute name followed by an optional condition to match against the value of the attribute. -->
+
+    <!-- Presence and value attribute selectors and
+     Substring value attribute selectors. -->
+    <!-- Example: 
+    img[alt="yes"] {
+    width: 20%;
+}
+
+img[alt="no"] {
+    width: 40%;
+} -->
+    <img src="myImage.png" alt="yes">
+    <img src="myImage.png" alt="no">
+
+    <!-- Multiple Selectors -->
+    <!-- h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Helvetica", "Arial", sans-serif;
+} -->
+
+    <h1>Paragraph</h1>
+    <h2>Paragraph</h2>
+    <h3>Paragraph</h3>
+    <h4>Paragraph</h4>
+    <h5>Paragraph</h5>
+    <h6>Paragraph</h6>
+
+    <!-- Linking CSS: 3 methods - Inline, Style tag, External (best) -->
+
+    <!-- Inline -->
+
+    <p style="color: gold">This is styled using inline CSS</p>
+
+    <!-- Style Tag -->
+
+    <style>
+    .styleTagMethod {
+        color: blueviolet
+    }
+    </style>
+
+    <p class="styleTagMethod">This is styled using Style Tag method</p>
+
+    <!-- External - Best Method and used here -->
+
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+
 </body>
+
 </html>
