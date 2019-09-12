@@ -1,0 +1,36 @@
+body {
+    background-color: grey;
+    color: aliceblue;
+    font-size: 27px;
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px 200px;
+    margin: auto;
+    grid-gap: 350px;
+    border: 2px solid rgb(247, 182, 96);
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid red;
+    padding: 15px;
+}
+
+#one {
+    
+}
+
+#two {
+
+}
+
+#three {
+
+}

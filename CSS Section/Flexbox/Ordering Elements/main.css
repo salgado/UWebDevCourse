@@ -1,0 +1,32 @@
+body {
+    background: grey;
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: center;
+    border: 2px solid yellow;
+}
+
+.box {
+    width: 250px;
+    height: 150px;
+    border: 1px solid red;
+}
+
+#one {
+    order: 1;
+    /* flex: 2 1 300px; */
+}
+
+#two {
+    order: 2;
+    /* flex: 2 1 300px; */
+}
+
+#three {
+    order: 3;
+}
