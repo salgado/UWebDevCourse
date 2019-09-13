@@ -7,30 +7,33 @@ body {
 .container {
     display: grid;
     width: 100%;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 300px 300px 200px;
+    grid-template-columns: 35vw 35vw;
+    grid-template-rows: 45vh 45vh;
     margin: auto;
-    grid-gap: 350px;
+    grid-gap: 15px;
     border: 2px solid rgb(247, 182, 96);
     justify-content: center;
+    grid-template-areas: "top top" "bottomLeft bottomRight"
 }
 
 .box {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid red;
-    padding: 15px;
+    border: 1px solid red;
 }
 
 #one {
+    grid-area: bottomLeft;
     
 }
 
 #two {
+    grid-area: top;
 
 }
 
 #three {
+    grid-area: bottomRight;
 
 }

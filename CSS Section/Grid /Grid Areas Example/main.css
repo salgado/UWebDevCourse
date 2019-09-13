@@ -1,0 +1,36 @@
+body {
+    background: grey;
+    font-size: 27px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 30px 300px;
+    grid-template-rows: 250px 600px 30px;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd"
+    "sd sd main main main main main main"
+    "ft ft ft ft ft ft ft ft";
+    border: 2px solid yellow; 
+}
+
+.box {
+    border: 1px solid red;
+    background-color: yellow;
+}
+
+.header {
+    grid-area: hd;
+}
+
+.footer {
+    grid-area: ft;
+}
+
+.content {
+    grid-area: main;
+}
+
+.sidebar {
+    grid-area: sd;
+}
