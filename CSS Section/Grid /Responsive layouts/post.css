@@ -1,0 +1,33 @@
+.container {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 100px 350px 600px 100px;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd"
+    "feat feat feat feat feat feat feat feat"
+    "main main main main main main main main"
+    "ft ft ft ft ft ft ft ft";
+    background-color: rgba(231, 231, 123, 0.979);
+    border: 2px solid yellow;
+}
+
+.box {
+    border: 1px solid red;
+    background: yellowgreen;
+}
+
+.header {
+    grid-area: hd;
+}
+
+.footer {
+    grid-area: ft;
+}
+
+.feature {
+    grid-area: feat;
+}
+
+.content {
+    grid-area: main;
+}

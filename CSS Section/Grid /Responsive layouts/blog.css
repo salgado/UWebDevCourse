@@ -1,0 +1,42 @@
+body {
+    background-color: grey;
+}
+
+
+.container {
+    display: grid;
+    width: 90%;
+    margin: auto;
+    margin-top: 150px;
+    grid-template-columns: 30px repeat(7, 1fr);
+    grid-template-rows: 70px 400px 1fr;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd"
+    "sd sd main main main main main main"
+    "ft ft ft ft ft ft ft ft";
+    background-color: rgba(231, 231, 123, 0.979);
+}
+
+.box {
+    border: 1px solid red;
+    background: rgb(179, 189, 43);
+}
+
+.header {
+    grid-area: hd;
+}
+
+.footer {
+    grid-area: ft;
+}
+
+.sidebar {
+    grid-area: sd;
+}
+
+.content {
+    grid-area: main;
+    background-image: url('images/waterfall.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}

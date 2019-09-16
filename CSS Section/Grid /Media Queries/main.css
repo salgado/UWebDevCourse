@@ -1,0 +1,127 @@
+body {
+    background-color: grey;
+}
+
+/* Mobile first */
+.container {
+    display: grid;
+    height: 90vh;
+    grid-template-columns: 850px;
+    grid-template-rows: 250px 1fr 1fr;
+    grid-template-areas: 
+    "hd"
+    "sd"
+    "main"
+    "ft";
+}
+
+.box {
+    border: 1px solid red;
+    background: rgb(179, 189, 43);
+}
+
+.header {
+    grid-area: hd;
+}
+
+.footer {
+    grid-area: ft;
+}
+
+.sidebar {
+    grid-area: sd;
+}
+
+.content {
+    grid-area: main;
+}
+
+/* Nested Grid */
+.nestedGrid {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    border: 3px solid white;
+}
+
+.photoBox {
+    width: 250px;
+    height: 150px;
+    border: 1px solid red;
+    background: yellow;
+}
+
+#one {
+    background-image: url('images/waterfall.jpeg');
+    background-size: contain;
+
+}
+
+#two {
+    background-image: url('images/waterfall.jpeg');
+    background-size: contain;
+}
+
+#three {
+    background-image: url('images/waterfall.jpeg');
+    background-size: contain;
+}
+
+#four {
+    background-image: url('images/waterfall.jpeg');
+    background-size: contain;
+}
+
+/* If screen is > 900px */
+@media(min-width:900px) {
+    .container {
+    display: grid;
+    width: 90%;
+    margin: auto;
+    margin-top: 150px;
+    grid-template-columns: 30px repeat(7, 1fr);
+    grid-template-rows: 70px 400px 1fr;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd"
+    "sd sd main main main main main main"
+    "ft ft ft ft ft ft ft ft";
+    background-color: rgba(231, 231, 123, 0.979);
+    }
+    .box {
+        background-color: aqua;
+    }
+}
+
+/* Medium screens */
+@media(min-width: 600px) and (max-width: 1100px) {
+    .container {
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 250px 600px;
+        border: 5px solid rgb(83, 214, 214);
+        grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "sd sd main main main main main main"
+        "ft ft ft ft ft ft ft ft";
+    }
+    .box {
+        background-color: teal;
+    }
+}
+
+/* Large screens */
+
+@media (min-width: 1101px) {
+    .container {
+        border: 5px solid blue;
+        grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "sd sd sd sd main main main main"
+        "ft ft ft ft ft ft ft ft";
+
+    }
+    .box {
+        background-color: brown;
+    }
+}
