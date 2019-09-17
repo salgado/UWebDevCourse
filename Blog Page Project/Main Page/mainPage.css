@@ -1,0 +1,51 @@
+body {
+    background: grey !important;
+    font-size: 27px;
+}
+
+.box {
+    border: 1px solid red;
+}
+
+
+/* Header container */
+
+.hd-main-container {
+    display: grid;
+    height: 60px;
+    margin: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: 1px solid teal;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+/* Card container */
+
+.ct-main-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: 1px solid purple;
+    margin: 25px;
+}
+
+
+.card-box {
+    width: 0 auto;
+    height: 500px;
+    margin: 50px;
+    align-items: center;
+    border: 1px solid yellowgreen;
+
+}
+
+/* Footer */
+.ft-main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    margin: 25px;
+    border: 1px solid goldenrod;
+}
