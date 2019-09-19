@@ -1,40 +1,53 @@
 body {
+    padding-top: 50px;
+    padding-bottom: 50px;
     background: rgb(255, 255, 255) !important;
     font-size: 27px;
 }
 
-
-
-/* Header container */
+/* Mobile Layouts Start ******************************************************************/
 
 /* Card container */
 
 .ct-main-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     grid-template-areas:
-        "up up up"
-        "mid mid mid"
-        "down down down"
-        "fd fd fd";
+        "up"
+        "mid"
+        "down"
+        "fd"
+        "c1"
+        "c2"
+        "c3";
     /* border: 1px solid purple; */
     margin: 25px;
+    align-content: center;
 }
 
 .card {
-    /* width: 0 auto;
-    height: 0 auto; */
-    width: 500px;
-    height: 450px;
+    width: 0 auto;
+    height: 0 auto;
+    /* width: 500px;
+    height: 450px; */
     margin: 15px;
-    align-items: center;
     /* border: 1px solid yellowgreen; */
     /* border-radius: 15px; */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
+}
 
+#box1 {
+    grid-area: up;
+    /* background-image: url("first-header.jpg"); */
+}
 
+#box8.jumbotron {
+    grid-area: down;
+    width: 100%;
+    /* background-image: url("first-header.jpg"); */
+    margin-top: 25px;
 }
 
 /* Card Style */
@@ -73,20 +86,6 @@ body {
     opacity: 1;
 }
 
-
-
-#box1 {
-    grid-area: up;
-    /* background-image: url("first-header.jpg"); */
-}
-
-#box8.jumbotron {
-    grid-area: down;
-    width: 100%;
-    /* background-image: url("first-header.jpg"); */
-    margin-top: 25px;
-}
-
 /* Footer */
 .ft-main-container {
     display: contents;
@@ -107,13 +106,146 @@ body {
     background-repeat: no-repeat;
 }
 
-/* Form */
+/* Contacts Options */
 
-.cnt-main-container {
+.cts-main-container {
+    display: grid;
+    width: 50vw;
+    height: 65vh;
+    margin: auto;
+    margin-bottom: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 48%);
+    grid-template-areas:
+        "up"
+        "bottomRight";
+    justify-content: right;
+}
+
+.c-card {
     display: flex;
-    flex-direction: row;
-    /* flex-direction: row; */
     align-items: center;
     justify-content: center;
-    border: 2px solid yellow;
+    padding: 15px;
+}
+
+/* Mobile Layouts End ******************************************************************************/
+
+
+
+/* Card container */
+
+/* If screen is wide enough ******************************************************************************/
+@media(min-width:900px) {
+
+    body {
+        background: rgb(206, 25, 25) !important;
+        font-size: 27px;
+    }
+
+    .ct-main-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "up up up"
+            "mid mid mid"
+            "down down down"
+            "c1 c1 c9"
+            "c2 c5 c5"
+            "c3 c3 c6";
+        /* border: 1px solid purple; */
+        margin: 25px;
+        align-content: center;
+    }
+
+    .card {
+        width: 0 auto;
+        height: 0 auto;
+        /* width: 500px;
+        height: 450px; */
+        margin: 15px;
+        /* border: 1px solid yellowgreen; */
+        /* border-radius: 15px; */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+    }
+
+    #box1 {
+        grid-area: up;
+        /* background-image: url("first-header.jpg"); */
+    }
+
+    #box8.jumbotron {
+        grid-area: down;
+        width: 100%;
+        /* background-image: url("first-header.jpg"); */
+        margin-top: 25px;
+    }
+
+    /* Card Style */
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .card-img-wrap {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .card-img-wrap:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.3);
+        opacity: 0;
+        transition: opacity .25s;
+    }
+
+    .card-img-wrap img {
+        transition: transform .25s;
+        width: 100%;
+    }
+
+    .card-img-wrap:hover img {
+        transform: scale(1.2);
+    }
+
+    .card-img-wrap:hover:after {
+        opacity: 1;
+    }
+
+    /* Footer */
+    .ft-main-container {
+        display: contents;
+    }
+
+    /* Navbar */
+
+    .navbar-btn {
+        color: #FFEB3B !important;
+        border-color: #FFEB3B !important;
+    }
+
+    /* Jumbotron */
+
+    #box1.jumbotron {
+        background-image: url('first-header.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    /* Contacts Options */
+
+ #c-card-1 {
+        grid-area: c3;
+    }
+
+    #c-card-2 {
+        grid-area: c6;
+    }
 }
