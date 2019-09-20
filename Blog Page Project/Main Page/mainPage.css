@@ -1,7 +1,7 @@
 body {
     padding-top: 50px;
     padding-bottom: 50px;
-    background: rgb(255, 255, 255) !important;
+    background: grey !important;
     font-size: 27px;
 }
 
@@ -139,7 +139,9 @@ body {
 @media(min-width:900px) {
 
     body {
-        background: rgb(206, 25, 25) !important;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background: grey !important;
         font-size: 27px;
     }
 
