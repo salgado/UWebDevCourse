@@ -10,46 +10,36 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
     <!-- Navbar Start -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar" style="background-color: #8bc34a;">
+        <h2 class="navbar-brand" href="#">Smartdroidesign</h2>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Resume <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
+                    <a class="nav-link" href="#">Recent</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    <a class="nav-link" href="#">Mobile</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0 navbar-btn" type="submit">Search</button>
-            </form>
+            <span class="navbar-text">
+                PORTFOLIO
+            </span>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -58,20 +48,39 @@
     <!-- First Jumbo Start -->
     <div class="ct-main-container">
         <!-- Content -->
-        <div class="jumbotron" id="box1">
-            <!-- <h1 class="display-4">JUMBO 1!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
-                to featured content or information.</p>
-            <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
-            <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+        <div class="card jumbotron jumbotron-fluid" id="box1">
+            <div class='some-page-wrapper'>
+                <div class='row'>
+                    <div class='column'>
+                    </div>
+                    <div class='column avatar-element'>
+                        <img src="images/avatar.png" alt="Avatar" class="avatar">
+                    </div>
+                    <div class='column'>
+                        <h1 class="bio-title card-text">Matteo Stara</h1>
+                        <h4 class="bio-subtitle card-text">Frontend Developer</h4>
+                        <div class="bio card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut
+                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                            esse
+                            cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                            anim id
+                            est laborum. <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- First Jumbo End -->
 
 
         <!-- Card Group 1 Start -->
-        <div class="card">
-            <div class="card-img-wrap"><img src="images/first-header.jpg" class="card-img-top" alt="..." style="width: 100%">
+        <div class="card text-white bg-dark">
+            <div class="card-img-wrap"><img src="images/laptop.jpg" class="card-img-top" alt="..." style="width: 100%">
             </div>
             <div class="card-body">
                 <h5 class="card-title">Card 1</h5>
@@ -82,8 +91,8 @@
             </div>
         </div>
 
-        <div class="card">
-            <div class="card-img-wrap"><img src="images/first-header.jpg" class="card-img-top" alt="..." style="width: 100%">
+        <div class="card text-white bg-dark">
+            <div class="card-img-wrap"><img src="images/nasa.jpg" class="card-img-top" alt="..." style="width: 100%">
             </div>
             <div class="card-body">
                 <h5 class="card-title">Card 2</h5>
@@ -93,8 +102,8 @@
             </div>
         </div>
 
-        <div class="card">
-            <div class="card-img-wrap"><img src="images/first-header.jpg" class="card-img-top" alt="..." style="width: 100%">
+        <div class="card text-white bg-dark">
+            <div class="card-img-wrap"><img src="images/stats.jpg" class="card-img-top" alt="..." style="width: 100%">
             </div>
             <div class="card-body">
                 <h5 class="card-title">Card 3</h5>
@@ -109,8 +118,9 @@
 
         <!-- Card Group 2 Start -->
 
-        <div class="card">
-            <div class="card-img-wrap"><img src="images/first-header.jpg" class="card-img-top" alt="..." style="width: 100%">
+        <div class="card text-white bg-dark">
+            <div class="card-img-wrap"><img src="images/best-coding-language.jpg" class="card-img-top" alt="..."
+                    style="width: 100%">
             </div>
             <div class="card-body">
                 <h5 class="card-title">Card 4</h5>
@@ -120,8 +130,8 @@
             </div>
         </div>
 
-        <div class="card">
-            <div class="card-img-wrap"><img src="images/first-header.jpg" class="card-img-top" alt="..." style="width: 100%">
+        <div class="card text-white bg-dark">
+            <div class="card-img-wrap"><img src="images/ai.jpeg" class="card-img-top" alt="..." style="width: 100%">
             </div>
             <div class="card-body">
                 <h5 class="card-title">Card 5</h5>
@@ -130,8 +140,8 @@
             </div>
         </div>
 
-        <div class="card">
-            <div class="card-img-wrap"><img src="images/first-header.jpg" class="card-img-top" alt="..." style="width: 100%">
+        <div class="card text-white bg-dark">
+            <div class="card-img-wrap"><img src="images/laptop.jpg" class="card-img-top" alt="..." style="width: 100%">
             </div>
             <div class="card-body">
                 <h5 class="card-title">Card 6</h5>
@@ -145,79 +155,50 @@
 
         <!-- Jumbo 2 Start -->
 
-        <div class="jumbotron" id="box8">
-            <h1 class="display-4">JUMBO 2</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
-                to featured content or information.</p>
-            <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        <div class=" card jumbotron jumbotron-fluid" id="box8">
+
         </div>
 
         <!-- Card Group 3 Start -->
 
-        <div class="card" id="c-card-1">
-                <div class="card-img-wrap"><img src="images/first-header.jpg" class="card-img-top" alt="..." style="width: 100%">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Contact Card 1</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                        content. This content is a little bit longer.</p>
-                    <a href="#" class="btn btn-primary">Read More</a>
-                </div>
+        <div class="card text-white bg-dark" id="c-card-1">
+            <!-- Image by mohamed Hassan from Pixabay  -->
+            <div class="card-img-wrap-contact-card-1"><img src="images/map.jpg" class="card-img-top" alt="..."
+                    style="width: 100%">
             </div>
-    
-            <div class="card" id="c-card-2">
-                <div class="card-img-wrap"><img src="images/first-header.jpg" class="card-img-top" alt="..." style="width: 100%">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Contact Card 2</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Read More</a>
-                </div>
+            <div class="card-body">
+                <h5 class="card-title">Contact Card 1</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+                <a href="#" class="btn btn-primary">Read More</a>
             </div>
+        </div>
+
+        <div class="card text-white bg-dark" id="c-card-2">
+            <!-- Image by mohamed Hassan from Pixabay  -->
+            <div class="card-img-wrap"><img src="images/contact-details.jpg" class="card-img-top" alt="..."
+                    style="width: 100%">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Contact Card 2</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+        </div>
     </div>
 
 
     <!-- Footer Start -->
-    
-        <nav class="navbar fixed-bottom navbar-expand-lg navbar navbar-dark bg-primary">
-            <a class="navbar-brand" href="#"></a>
-            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0 navbar-btn" type="submit">Search</button> -->
-                </form>
-            </div>
+    <div class="navbar-bottom">
+        <nav class="navbar fixed-bottom navbar-expand-lg navbar-dark" style="background-color: #8bc34a;">
+            <!-- Add font awesome icons -->
+            <a href="https://www.facebook.com/SmartDroiDesign/" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/home" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com/smartdroidesign/?hl=en" class="fa fa-instagram"></a>
+            <a href="https://www.linkedin.com/in/matteo-stara-814062a7" class="fa fa-linkedin"></a>
         </nav>
+    </div>
 
     <!-- Footer End -->
 
