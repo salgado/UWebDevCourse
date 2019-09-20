@@ -9,13 +9,9 @@ body {
 .card {
     width: 0 auto;
     height: 0 auto;
-    /* width: 500px;
-    height: 450px; */
     margin: 15px;
     margin-left: 300px;
     margin-right: 300px;
-    /* border: 1px solid yellowgreen; */
-    /* border-radius: 15px; */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
 }
@@ -80,12 +76,10 @@ body {
 
 /* Navbar */
 
-#navbar-bottom {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    
+.navbar > a {
+    box-align: center;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /* Typography */
