@@ -1,0 +1,29 @@
+/* ******************************************************* 1920x945 ********************************************************/
+@import url('../Styles/articleOne-layout/articleOne-layout-1920/articleOne-1920.css');
+
+/* ******************************************************* 1500 ********************************************************/
+@import url('../Styles/articleOne-layout/articleOne-layout-1500/articleOne-1500.css');
+
+/* ******************************************************* 1200 ********************************************************/
+@import url('../Styles/articleOne-layout/articleOne-layout-1200/articleOne-1200.css');
+
+/* ******************************************************* 900 ********************************************************/
+@import url('../Styles/articleOne-layout/articleOne-layout-900/articleOne-900.css');
+
+#style-2::-webkit-scrollbar {
+    width: 8px;
+    background-color: #c34a4a;
+    border-radius: 10px;
+}
+
+#style-2::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #c34a4a;
+}
+
+.social-item {
+    color: #c34a4a;
+    text-decoration: none;
+    background-color: transparent;
+}
