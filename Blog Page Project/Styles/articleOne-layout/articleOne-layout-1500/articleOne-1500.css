@@ -1,11 +1,13 @@
 @media(max-width: 1500px) {
+
+    html,
     body {
         background: rgb(71, 71, 71) !important;
-        font-size: 27px;
-        padding-top: 80px;
-        padding-bottom: 80px;
+        font-family: 'Roboto', sans-serif;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
-    
+
     /* Card Style */
     .card {
         width: 0 auto;
@@ -16,9 +18,8 @@
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         transition: 0.3s;
     }
-    
+
     /* Header container */
-    
     .hd-main-container.card {
         display: grid;
         height: 10px;
@@ -27,7 +28,7 @@
         grid-template-rows: repeat(1, 1fr);
         text-align: center;
     }
-    
+
     .hd-card-body {
         display: flex;
         flex-direction: column;
@@ -35,21 +36,20 @@
         margin-top: 20px;
         margin-bottom: 20px;
     }
-    
+
     /* Blog container */
-    
     .blog-content-container {
         height: 600px;
         margin: auto;
     }
-    
+
     .blog-card-body {
         display: flex;
         flex-direction: column;
         margin: 30px;
     }
-    
-    
+
+
     .social-card-body {
         display: flex;
         flex-direction: row;
@@ -57,89 +57,80 @@
         margin-top: 20px;
         margin-bottom: 20px;
     }
-    
-    
+
+
+    /* Social */
     #social-f {
         order: 1;
     }
-    
+
     #social-t {
         order: 2;
     }
-    
+
     #social-i {
         order: 3;
     }
-    
+
     #social-l {
         order: 4;
     }
-    
+
     /* Navbar */
-    
-    .navbar > a {
+    .navbar>a {
         box-align: center;
         margin-right: auto;
         margin-left: auto;
     }
-    
+
     /* Typography */
-    
     .titles {
         color: aliceblue;
     }
-    
+
     .card-title {
         align-self: center;
     }
-    
+
     .card-subtitle {
         align-self: center;
     }
-    
+
     .card-text {
         overflow-y: scroll;
         height: 500px;
         padding: 1rem;
         color: azure;
     }
-    
-    /*
-     *  STYLE 2
-     */
-    
-     #style-2::-webkit-scrollbar-track
-     {
-         -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-         border-radius: 10px;
-         background-color: #F5F5F5;
-     }
-     
-     #style-2::-webkit-scrollbar
-     {
-         width: 8px;
-         background-color: rgb(235, 213, 21);
-         border-radius: 10px;
-     }
-     
-     #style-2::-webkit-scrollbar-thumb
-     {
-         border-radius: 10px;
-         -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-         background-color: rgb(235, 213, 21);
-     }
-    
+
+    /* Scroll bar */
+    #style-2::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        background-color: #F5F5F5;
+    }
+
+    #style-2::-webkit-scrollbar {
+        width: 8px;
+        background-color: rgb(235, 213, 21);
+        border-radius: 10px;
+    }
+
+    #style-2::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+        background-color: rgb(235, 213, 21);
+    }
+
     /* Avatar */
-    
     .avatar {
         width: 150px;
         height: 150px;
         border-radius: 50%;
         align-self: center;
     }
-    
+
     /* Icons */
-    
     .fa {
         padding: 20px;
         font-size: small;
@@ -148,32 +139,33 @@
         text-decoration: none;
         border-radius: 50%;
     }
-    
-    /* hover effect */
+
+    /* Card hover effect */
     .fa:hover {
         background: #6e4ac3;
         opacity: 0.7;
         color: #4b4b4b;
     }
-    
+
+    /* Sharing */
     /* Facebook */
     .fa-facebook {
         background: #4b4b4b;
         color: white;
     }
-    
+
     /* Twitter */
     .fa-twitter {
         background: #4b4b4b;
         color: white;
     }
-    
+
     /* Instagram */
     .fa-instagram {
         background: #4b4b4b;
         color: white;
     }
-    
+
     /* Linkedin */
     .fa-linkedin {
         background: #4b4b4b;

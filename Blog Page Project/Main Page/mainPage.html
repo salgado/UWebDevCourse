@@ -7,13 +7,11 @@
     <title>Matteo's Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="mainPage.css" />
-    <!-- Latest compiled and minified CSS -->
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <!-- Add icon library -->
+    <!-- Icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
 </head>
@@ -21,8 +19,7 @@
 <body>
 
     <!-- Navbar Start -->
-    <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar" style="background-color: #303F9F;">
+    <nav class="navbar fixed-top navbar-expand navbar" style="background-color: #303F9F;">
         <h2 class="navbar-brand" href="#" style="color: #FFF;">Smartdroidesign</h2>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,8 +38,10 @@
                     <a class="nav-link" href="#" style="color: #BDBDBD;">Mobile</a>
                 </li>
             </ul>
-            <span class="navbar-text" style="color: #FFC107;">
-                <strong>PORTFOLIO</strong>
+            <span class="navbar-text">
+                <a style="color: #FFC107;"
+                    href="https://github.com/Memnoc/UWebDevCourse/tree/master/Blog%20Page%20Project">
+                    <strong>PORTFOLIO</strong></a>
             </span>
         </div>
     </nav>
@@ -62,7 +61,7 @@
                     </div>
                     <div class='column'>
                         <h1 class="bio-title card-text">Matteo Stara</h1>
-                        <h4 class="bio-subtitle card-text">Frontend Developer</h4>
+                        <h4 class="bio-subtitle card-text" style="color: #C5CAE9">Frontend Developer</h4>
                         <div class="bio card-text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore
@@ -88,7 +87,7 @@
                     style="width: 100%">
             </div>
             <div class="card-body">
-                <h5 class="card-title">New Macbook Pro</h5>
+                <h5 class="card-title" style="color: #FFC107">New Macbook Pro</h5>
                 <p class="card-text">The new 2019 13 and 15-inch MacBook Pro models continue to use the same design as
                     the 2018 MacBook Pros, with the smaller, thinner, and lighter design that Apple first introduced
                     with the 2016 MacBook Pro models</p>
@@ -100,7 +99,7 @@
             <div class="card-img-wrap"><img src="../images/nasa.jpg" class="card-img-top" alt="..." style="width: 100%">
             </div>
             <div class="card-body">
-                <h5 class="card-title">Google claims reaching Quantum Supremacy</h5>
+                <h5 class="card-title" style="color: #FFC107">Google claims reaching Quantum Supremacy</h5>
                 <p class="card-text">This could be the dawn of a new era in computing. Google has claimed that its
                     quantum computer performed a calculation that would be practically impossible for even the best
                     supercomputer – in other words, it has attained quantum supremacy.
@@ -114,7 +113,7 @@
                     style="width: 100%">
             </div>
             <div class="card-body">
-                <h5 class="card-title">Data Analysis Trend in 2019</h5>
+                <h5 class="card-title" style="color: #FFC107">Data Analysis Trend in 2019</h5>
                 <p class="card-text">The amount of data generated today from all industry domains, also known as big
                     data is huge, encompassing data gathering, data analysis, and data implementation process.</p>
                 <a href="https://www.analyticsinsight.net/top-7-big-data-analytics-trends-for-2019/"
@@ -131,7 +130,7 @@
                     style="width: 100%">
             </div>
             <div class="card-body">
-                <h5 class="card-title">Most popular coding languages in 2019</h5>
+                <h5 class="card-title" style="color: #C5CAE9">Most popular coding languages in 2019</h5>
                 <p class="card-text">A couple of months ago, I was reading an interesting article on HackerNews, which
                     argued that why you should learn numerous programming languages even if you won’t immediately use
                     them, and I have to say that I agreed.
@@ -146,7 +145,7 @@
             <div class="card-img-wrap"><img src="../images/ai.jpeg" class="card-img-top" alt="..." style="width: 100%">
             </div>
             <div class="card-body">
-                <h5 class="card-title">The Rise of the Machines</h5>
+                <h5 class="card-title" style="color: #C5CAE9">The Rise of the Machines</h5>
                 <p class="card-text">By 2025, Artificial Intelligence (AI) will be driving the biggest technological
                     advancements across the auto, banking, compute, energy and health care industries. Companies likely
                     to harness the power of AI most successfully will be those with robust fundamental outlooks</p>
@@ -159,7 +158,7 @@
                     style="width: 100%">
             </div>
             <div class="card-body">
-                <h5 class="card-title">The future of Drones</h5>
+                <h5 class="card-title" style="color: #C5CAE9">The future of Drones</h5>
                 <p class="card-text">Drones have taken off as a unique tool for everyday life, revolutionizing the way
                     we capture, monitor and assist our world. Experience the next wave of advancements in and
                     applications of drone technology.</p>
@@ -175,7 +174,7 @@
         <div class=" card jumbotron jumbotron-fluid" id="box8">
             <div class='recent-post-container'>
                 <h1 class="recent-title card-text">Most Recent Posts</h1>
-                <h4 class="recent-subtitle card-text">Check out what's trending now</h4>
+                <h4 class="recent-subtitle card-text">Check out what's popular now</h4>
             </div>
         </div>
     </div>
@@ -189,54 +188,44 @@
                 style="width: 100%">
         </div>
         <div class="card-body">
-            <h5 class="card-title">Send us an email</h5>
-            <p class="card-text">You can send an email to our staff to discuss about articles, content, report broken links, etc.</p>
+            <h5 class="card-title" style="color: #FFC107">Send us an email</h5>
+            <p class="card-text" style="color: #C5CAE9">You can send an email to our staff to discuss about articles,
+                content, report broken links, etc.</p>
             <form>
                 <div class="form-row">
                     <div class="col-md-4 mb-3">
-                        <label for="validationDefault01">First name</label>
+                        <label for="validationDefault01" style="color: #C5CAE9">First name</label>
                         <input type="text" class="form-control" id="validationDefault01" placeholder="First name"
                             value="Mark" required>
                     </div>
                     <div class="col-md-4 mb-3">
-                        <label for="validationDefault02">Last name</label>
+                        <label for="validationDefault02" style="color: #C5CAE9">Last name</label>
                         <input type="text" class="form-control" id="validationDefault02" placeholder="Last name"
-                            value="Otto" required>
+                            value="Smith" required>
                     </div>
                     <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                          </div>
-                </div>
-                <div class="form-row">
-                    <div class="col-md-6 mb-3">
-                        <label for="validationDefault03">City</label>
-                        <input type="comment" class="form-control" id="validationDefault03" placeholder="City" required>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <label for="validationDefault04">State</label>
-                        <input type="text" class="form-control" id="validationDefault04" placeholder="State" required>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <label for="validationDefault05">Zip</label>
-                        <input type="text" class="form-control" id="validationDefault05" placeholder="Zip" required>
+                        <label for="exampleInputEmail1" style="color: #C5CAE9">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter email" value="acme@email.com" required>
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small>
                     </div>
                 </div>
-                <!--Material textarea-->
+                <!--Textarea-->
                 <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Describe your issue</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <label for="exampleFormControlTextarea1" style="color: #C5CAE9">Describe your issue</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Provide a short description of the issue encountered." required></textarea>
                 </div>
                 <div class="form-group">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-                        <label class="form-check-label" for="invalidCheck2">
+                        <label class="form-check-label" for="invalidCheck2" style="color: #C5CAE9">
                             Agree to terms and conditions
                         </label>
                     </div>
                 </div>
-                <button class="btn btn-primary" type="submit">Submit form</button>
+                <button class="btn btn-primary" type="submit" style="color: #FFC107">Submit form</button>
             </form>
 
         </div>
@@ -244,14 +233,14 @@
 
     <div class="card text-white bg-dark" id="c-card-2">
         <!-- Image by mohamed Hassan from Pixabay  -->
-        <div class="card-img-wrap"><img src="../images/contact-details.jpg" class="card-img-top" alt="..."
+        <div class="card-img-wrap"><img src="../images/contact-us.png" class="card-img-top" alt="..."
                 style="width: 100%">
         </div>
         <div class="card-body">
-            <h5 class="card-title">Give us a call or open a Chat!</h5>
-            <p class="card-text">Our agents are online to answer your questions.</p>
-            <a href="#" class="btn btn-primary">Open Chat</a>
-            <a href="#" class="btn btn-primary">Call us</a>
+            <h5 class="card-title" style="color: #FFC107">Give us a call or open a Chat!</h5>
+            <p class="card-text" style="color: #C5CAE9">Our agents are online to answer your questions.</p>
+            <a href="#" class="btn btn-primary" style="color: #FFC107">Open Chat</a>
+            <a href="#" class="btn btn-primary" style="color: #FFC107">Call us</a>
         </div>
     </div>
     </div>
@@ -260,8 +249,8 @@
     <!-- Footer Start -->
 
     <div class="navbar-bottom">
-        <nav class="navbar fixed-bottom navbar-expand-lg navbar-dark" style="background-color: #303F9F;">
-            <!-- Add font awesome icons -->
+        <nav class="navbar fixed-bottom navbar-expand navbar-dark" style="background-color: #303F9F;">
+            <!-- Font awesome icons -->
             <a href="https://www.facebook.com/SmartDroiDesign/" class="fa fa-facebook" style="color:#363636"></a>
             <a href="https://twitter.com/home" class="fa fa-twitter" style="color:#363636"></a>
             <a href="https://www.instagram.com/smartdroidesign/?hl=en" class="fa fa-instagram"
