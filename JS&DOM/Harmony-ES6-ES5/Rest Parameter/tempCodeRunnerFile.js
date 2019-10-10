@@ -1,0 +1,1 @@
+console.log(average(2, 6)); 
