@@ -56,3 +56,49 @@ app.get('/animal', sendData);
 function sendData(request, response) {
     response.send(projectData);
 };
+
+
+
+
+
+
+
+
+// ****************************** Fake Animal API ******************************
+
+// Dummy Endpoint
+const fakeData = {
+    animal: 'lion',
+    fact: 'lions are deadly'
+}
+
+app.get('/fakeAnimalData', getFakeData)
+
+function getFakeData(req, res) {
+    res.send(fakeData)
+}
+
+const animalData = [];
+
+app.get('/all', getData)
+
+function getData(req, res) {
+    res.send(animalData)
+    console.log(animalData);
+}
+
+// POST ROUTE
+app.post('/addAnimal', addAnimal);
+
+function addAnimal(req, res) {
+
+    newEntry = {
+        animal: req.body.animal,
+        facts: req.body.fact,
+        fav: req.body.fav
+    }
+
+    animalData.push(newEntry)
+    res.send(animalData)
+    console.log(animalData);
+}

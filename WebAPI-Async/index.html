@@ -5,13 +5,21 @@
     <meta charset="UTF-8">
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Animal API</title>
 </head>
 
 <body>
-    <h1>html file</h1>
-
-    <script src="./app.js"></script>
+    <div id="app">
+        <label for="animal">Enter the name of your favorite animal</label>
+        <input id="animal" name="animal">
+        <textarea id="fav" placeholder="Enter your favorite thing about your favorite animal" rows="9" cols="50"></textarea>
+        <button id="generate">GO</button>
+        <div>Animal is: </div>
+        <div id="name"></div>
+        <div id="fact"></div>
+        <div id="favourite"></div>
+    </div>
+    <script src="animalApiDemo.js"></script>
 </body>
 
 </html>
