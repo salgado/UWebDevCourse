@@ -23,7 +23,7 @@ const port = 3000;
 const server = app.listen(port, listening);
 
 function listening() {
-    console.log(server);
+    // console.log(server);
     console.log(`running on localhost: ${port}`);
 };
 
@@ -32,7 +32,6 @@ app.get('/all', sendData);
 
 function sendData(request, response) {
     response.send(projectData);
-    console.log("something");
 };
 
 // POST route
@@ -49,4 +48,11 @@ app.post('/animal', addAnimal);
 function addAnimal(req, res) {
     data.push(req.body);
     console.log(data);
+};
+
+// GET route
+app.get('/animal', sendData);
+
+function sendData(request, response) {
+    response.send(projectData);
 };
