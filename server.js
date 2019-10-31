@@ -28,11 +28,11 @@ function listening() {
 };
 
 // GET route
-app.get('/all', sendData);
+// app.get('/all', sendData);
 
-function sendData(request, response) {
-    response.send(projectData);
-};
+// function sendData(request, response) {
+//     response.send(projectData);
+// };
 
 // POST route
 app.post('/add', function(request, response) {

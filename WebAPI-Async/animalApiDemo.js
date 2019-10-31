@@ -61,9 +61,9 @@ const updateUI = async() => {
     const request = await fetch('/all');
     try {
         const allData = await request.json();
-        document.getElementById('name').innerHTML = allData[0].animal;
-        document.getElementById('fact').innerHTML = allData[0].facts;
-        document.getElementById('favourite').innerHTML = allData[0].fav;
+        document.getElementById('animalName').innerHTML = allData[0].animal;
+        document.getElementById('animalFact').innerHTML = allData[0].facts;
+        document.getElementById('animalFav').innerHTML = allData[0].fav;
 
     } catch (error) {
         console.log("error", error);
