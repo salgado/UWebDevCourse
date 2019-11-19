@@ -35,27 +35,27 @@ function listening() {
 // };
 
 // POST route
-app.post('/add', function(request, response) {
-    let data = request.body;
-    console.log(data);
-});
+// app.post('/add', function(request, response) {
+//     let data = request.body;
+//     console.log(data);
+// });
 
 // POST an animal
-const data = [];
+// const data = [];
 
-app.post('/animal', addAnimal);
+// app.post('/animal', addAnimal);
 
-function addAnimal(req, res) {
-    data.push(req.body);
-    console.log(data);
-};
+// function addAnimal(req, res) {
+//     data.push(req.body);
+//     console.log(data);
+// };
 
 // GET route
-app.get('/animal', sendData);
+// app.get('/animal', sendData);
 
-function sendData(request, response) {
-    response.send(projectData);
-};
+// function sendData(request, response) {
+//     response.send(projectData);
+// };
 
 
 

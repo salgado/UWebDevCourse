@@ -2,7 +2,7 @@
 // let baseURL = 'http://api.animalinfo.org/data/?animal='
 // let apiKey = '&appid=9f15e45060...';
 let animal = null;
-const newAnimal = document.getElementById('animal').value;
+// const newAnimal = document.getElementById('animal').value;
 
 document.getElementById('generate').addEventListener('click', performAction);
 
@@ -10,14 +10,14 @@ function performAction(e) {
     const fav = document.getElementById('fav').value;
 
     // Faking an API call
-    getAnimal('/fakeAnimalData', )
+    getAnimal('/fakeAnimalData')
         // New Syntax!
         .then(function(data) {
             // Add data
             console.log(data);
             postData('/addAnimal', { animal: data.animal, fact: data.fact, fav: fav });
 
-            updateUI()
+            updateUI();
         })
 }
 
